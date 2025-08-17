@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width :1350px)" href="phone.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width :700px)" href="phone.css"> -->
+</head>
+<body>
+
+    <div class="content-placeholder">
+        <div class="skeleton-header"></div>
+        <div class="skeleton-body"></div>
+        <div class="skeleton-footer"></div>
+    </div>
+    
+    <div class="actual-content" style="display: none;">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="images/logo-pmec.png" alt="logo">
+            </div>
+            <ul id="section">
+                <li class="list-item" id="home">Home</li>
+                <li class="list-item" id="surprise">Surprise</li>
+                <li class="list-item" id="quiz">Quiz</li>
+                <li class="list-item" id="signup">SignUp</li>
+                <li class="list-item" id="login">Login</li>
+            </ul>
+        </nav>
+    
+    
+        <div id="Container">
+            <h1 id="heading1">Welcome To My Quiz App</h1>
+            <div id="quizContainer">
+                <!-- <div id="timerPlusCross">
+                </div> -->
+                <p id="timer"></p>
+                <div class="cross setCross"><img src="images/cross.png" alt="cross"></div>
+                <h2>Exam Questions</h2>
+                <div id="questions">
+                    <p id="question"></p>
+                    <div class="optionContainer"><button class="options" id="one">1</button></div>
+                    <div class="optionContainer"><button class="options" id="two">2</button></div>
+                    <div class="optionContainer"><button class="options" id="three">3</button></div>
+                    <div class="optionContainer"><button class="options" id="four">4</button></div>
+                </div>
+                <div id="buttons">
+                    <button class="btn" id="prev">Previous</button>
+                    <button class="btn" id="submit">Submit</button>
+                    <button class="btn" id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        <div id="scoreShow">
+            <p id="scorePara" class="center">Your Score is <span id="result">2</span>/5</p>
+            <div class="cross"><img src="images/cross.png" alt="cross"></div>
+            <p class="center" style="font-size: 1.4rem;">If You Want To Give The Quiz Again Then Click On the <strong>Retry</strong> Button
+            </p>
+            <div class="btn center" id="retry">Retry</div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
